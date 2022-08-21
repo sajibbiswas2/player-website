@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.bg-img {
+    background: url(img/baground.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    text-align: center;
+    align-items: center;
+}
+.bestplayer{
+    position: absolute;
+    color: orange;
+    margin-top: 200px;
+    margin-left: 420px;
+    font-weight: 650;
+   font-size: 4rem;
+font-style:italic ;
+   
+}
+.players-detels{
+    position: absolute;
+    color: rgb(215, 227, 250);
+    margin-top: 300px;
+   margin-left: 440px;
+   font-size: 1.5rem;
+   font-weight: 500;
+   font-style: italic;
+}
