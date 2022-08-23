@@ -9,13 +9,13 @@ for (const selectBtn of btnSelected) {
     selectBtn.addEventListener("click", (add) => {
         count++;
         if (count > 5) {
-            alert("You can selected only five player ");
+            alert("allrady your five player selected ");
         }
 
         else {
             const selected = SelectedName(add);
             selectedPlayers.appendChild(selected);
-            add.target.style.backgroundColor = "yellow";
+            add.target.style.backgroundColor = "red";
             add.target.style.color = "black";
             add.target.disabled = true;
         }
@@ -35,4 +35,29 @@ function SelectedName(add) {
     name.innerText = playerAll;
     return name;
 }
+
+   const playerAll = document.getElementById("Per-Player");
+const callBtn = document.getElementById("calcute-buton");
+const expensisAll = document.getElementById("player-total");
+
+
+
+callBtn.addEventListener("click", (add)   => {
+    if (playerAll.value == "" || count === 0) {
+        alert("all your player ");
+    }
+
+    else {
+        const PlayerNamesto = + playerAll.value;
+        let expense =
+            count > 5
+                ? 5 * PlayerNamesto
+                : count * PlayerNamesto;
+        expensisAll.innerText = `${expense}`;
+    }
+});
+
+
+
+
 
