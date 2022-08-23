@@ -30,3 +30,23 @@ font-style:italic ;
    font-weight: 500;
    font-style: italic;
 }
+.size{
+    text-align: center;
+    font-size: 2rem ;
+}
+.playersgols{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+.button{
+    margin-left: 50px;
+   font-size: 1.2rem;
+   background-color: blue;
+   padding-top: 20px;
+}
+.player-list{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+}

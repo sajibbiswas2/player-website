@@ -18,18 +18,133 @@
 </head>
 
 <body>
+
   <section>
     <div>
       <div class="bg-img">
-          <h1 class="bestplayer">My Best Football players </h1>
-          <p class=" players-detels">What struck me most was how comfortable he looked at Brazil' <br>launching attacks and dictating  far more experienced players <br> around him. Neymar was making just his</p>
+        <h1 class="bestplayer">My Best Football players </h1>
+        <p class=" players-detels">What struck me most was how comfortable he looked at Brazil' <br>launching attacks
+          and dictating far more experienced players <br> around him. Neymar was making just his</p>
       </div>
     </div>
   </section>
-  <main>
-    <section>
-           
+  <main class="bg-black">
+    <section class="container">
+      <div class="row">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/images.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="size  players-name">Cristiaro ronaldo</h5>
+                <p class="playersgols">6 Goals 120 Assist</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button id="players-1" class="btn btn-primary select-buton " type="button">SELECT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/player (1).jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="size players-name">Thomas muller</h5>
+                <p class="playersgols">6 Goals 120 Assist</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-primary select-buton" type="button">SELECT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/player (8).jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="size players-name">Lioneel messi</h5>
+                <p class="playersgols">6 Goals 120 Assist</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-danger select-buton" type="button">SELECT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col ">
+            <div class="card h-100">
+              <div class="card-body bg-danger  text-black">
+                <h5 class="card-title">Selectede-v</h5>
+                <ol id="olList" class="player-list text-white   ">
+
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
+
+    <section class="container">
+      <div class="row">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/player (2).png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="size players-name">Giorgio Chielini</h5>
+                <p class="playersgols">6 Goals 120 Assist</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-primary select-buton" type="button">SELECT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/player (6).png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="size players-name">Kyllar Mbappe</h5>
+                <p class="playersgols">6 Goals 120 Assist</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-primary select-buton" type="button">SELECT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img/player (9).jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="size  players-name">Giorgio chielini</h5>
+                <p class="playersgols">6 Goals 120 Assist</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-primary select-buton" type="button">SELECT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100 text-center">
+              <div class="card-body">
+                <h5 class="card-title">Budget</h5>
+                <h5>Per Player <input class="w-50" type="number" name="" id="Per-Player"></h5>
+                <button id="calcute-buton" class="btn btn-danger py-2 px-xxl-5  " type="button"> Calculate</button>
+                <h6 class="fs-5"> Expenses : $<span id="player-total" ></span> </h6>
+                <h5>manager <input class="w-50" type="number" name="" id="manajer-salary"></h5>
+                <h5>Coach <input class="w-50" type="number" name="" id="coach-salary"></h5>
+                <button class="btn btn-danger py-2 px-xxl-5  " type="calcute-total">Calculate Total</button>
+                <h5>total: $ <span id="alltotal-amount"></span></h5>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+    </section>
+
   </main>
   <script src="index.js"></script>
 </body>
