@@ -56,6 +56,29 @@ callBtn.addEventListener("click", (add)   => {
         expensisAll.innerText = `${expense}`;
     }
 });
+const managertaka = document.getElementById("manajer-salary");
+const coachtaka = document.getElementById("coach-salary");
+
+const calTotalBtn = document.getElementById("calcute-total");
+const Playertolal = document.getElementById("alltotal-amount");
+
+calTotalBtn.addEventListener("click", (add) => {
+    if (managertaka.value == "" || coachtaka.value == "") {
+        alert("plz inter your salary select ");
+    }
+    else {
+        let PlayerNamesto = +playerAll.value;
+        let expensisAll =
+            count > 5
+                ? 5 * PlayerNamesto
+                : count * PlayerNamesto;
+        let coachsalary = +coachtaka.value;
+        let managersalary = + managertaka.value;
+
+        let totalallsalary = expensisAll + managersalary + coachsalary;
+        Playertolal.innerText = `${totalallsalary}`;
+    }
+});
 
 
 
